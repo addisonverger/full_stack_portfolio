@@ -1,26 +1,22 @@
 {
   "name": "my-website",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-bulma-components": "^2.3.0",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addisonverger/my-website.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addisonverger/my-website/issues"
+  },
+  "homepage": "https://github.com/addisonverger/my-website#readme",
+  "dependencies": {
+    "bulma": "^0.7.4"
+  }
 }
