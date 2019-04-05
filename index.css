@@ -10,12 +10,28 @@ h1#siteTitle {
   font-size: 5rem
 }
 
-* {
-  font-family: 'Roboto Mono', monospace;
+@keyframes example {
+  from {background: repeating-linear-gradient(30deg, #F47983, #9198e5, #F47983 20px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+  to {background: repeating-linear-gradient(30deg, #9198e5, #F47983, #9198e5 20px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
 }
 
-.contactLink {
-  font-size: 2rem
+h1#siteTitle:hover {
+  background: repeating-linear-gradient(30deg, #F47983, #9198e5, #F47983 20px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 20;
+  text-transform: lowercase;
+  cursor: none;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
 }
 
 .siteLink {
@@ -47,4 +63,15 @@ h1#siteTitle {
 #fixedBottomRight {
   bottom: 0;
   right: 0;
+}
+
+.bio .hero.is-warning.is-bold {
+  background-image: url('./IMG_6413.JPG'), linear-gradient(141deg,#ffaf24 0,#ffdd57 71%,#fffa70 100%);;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: left top, right top;
+}
+
+.contactLink {
+  font-size: 2rem
 }
