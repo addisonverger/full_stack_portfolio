@@ -24,7 +24,7 @@ h1#siteTitle:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-iteration-count: 20;
   text-transform: lowercase;
   cursor: none;
@@ -65,13 +65,41 @@ h1#siteTitle:hover {
   right: 0;
 }
 
-.bio .hero.is-warning.is-bold {
-  background-image: url('./IMG_6413.JPG'), linear-gradient(141deg,#ffaf24 0,#ffdd57 71%,#fffa70 100%);;
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: left top, right top;
+.bioContainer {
+  background-image: linear-gradient(141deg,#ffaf24 0,#ffdd57 71%,#fffa70 100%);
+  min-height: 100vh;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageContent {
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.imageContent img {
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   object-fit: cover;
+}
+
+.textContent {
+  overflow-y: scroll;
+  height: 100vh;
+  width: 50vw;
+  padding: 6rem;
 }
 
 .contactLink {
   font-size: 2rem
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
