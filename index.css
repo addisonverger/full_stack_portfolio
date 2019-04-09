@@ -7,27 +7,83 @@ h1, h3 {
 }
 
 h1#siteTitle {
-  font-size: 5rem
+  font-size: 5rem;
+  color: #E3C0D3;
 }
 
-@keyframes example {
-  from {background: repeating-linear-gradient(30deg, #F47983, #9198e5, #F47983 20px);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
-  to {background: repeating-linear-gradient(30deg, #9198e5, #F47983, #9198e5 20px);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 h1#siteTitle:hover {
-  background: repeating-linear-gradient(30deg, #F47983, #9198e5, #F47983 20px);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation-name: example;
-  animation-duration: .5s;
-  animation-iteration-count: 20;
-  text-transform: lowercase;
   cursor: none;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 * {
@@ -65,9 +121,32 @@ h1#siteTitle:hover {
   right: 0;
 }
 
+#home .hero {
+  background-color: #82837F;
+}
+
 .bioContainer {
-  background-image: linear-gradient(141deg,#ffaf24 0,#ffdd57 71%,#fffa70 100%);
+  background-color: #EFC88B;
   min-height: 100vh;
+}
+
+#projectOneContainer {
+  background-color: #BE8A60;
+  min-height: 100vh;
+}
+
+#projectTwoContainer {
+  background-color: #EDAF97;
+  min-height: 100vh;
+}
+
+#projectThreeContainer {
+  background-color: #DCC9B6;
+  min-height: 100vh;
+}
+
+#contact .hero {
+  background-color: #E3C0D3;
 }
 
 .flexContainer {
@@ -95,8 +174,18 @@ h1#siteTitle:hover {
   padding: 6rem;
 }
 
-.contactLink {
-  font-size: 2rem
+.projectLink a {
+  color: white
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.contactLink a {
+  font-size: 2rem;
+  color: white;
 }
 
 .contactLink:hover {

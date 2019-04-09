@@ -31,13 +31,13 @@
       </a>
     </div>
     <div id="home">
-      <div class="hero is-primary is-fullheight is-bold">
+      <div class="hero is-fullheight">
         <div class="hero-body">
           <div class="container" style="text-align:center">
             <h1 class="title is-1" id="siteTitle">
               Addison Verger
             </h1>
-            <h3 class="subtitle is-3">
+            <h3 class="subtitle is-3 has-text-white">
               Full Stack Web Developer
             </h3>
           </div>
@@ -78,21 +78,127 @@
       </div>
     </div>
     <div id="projects">
-      <div class="hero is-danger is-fullheight is-bold">
-        <div class="hero-body">
-          <div class="container">
+      <div id="projectOneContainer">
+        <div class="flexContainer">
+          <div class="textContent">
             <h1 class="title">
-              Hero title Primary
+              Now On View
             </h1>
-            <h3 class="subtitle is-3">
-              Subtitle
-            </h3>
+            <p>
+              Curatorial site where users can discover works of art in the
+              Metropolitan Museum of Art's collection. Search through artworks in the
+              collection by exploring different tags and select images to save them
+              to your gallery. Zoom in on each artwork in your gallery to learn
+              additional information and select images to sort them into exhibitions.
+              Organize your exhibitions however you choose by positioning artworks
+              in the workspace.
+            </p>
+            <div class="content">
+              <ul>
+                <li>Created using HTML, CSS, Javascript, React, Redux, and Axios.
+                </li>
+                <li>Used the Metropolitan Museum of Art Collection API for artwork
+                  data.</li>
+              </ul>
+            </div>
+            <br />
+            <div class="projectLink">
+              <a href="https://now-on-view.firebaseapp.com/" target="_blank">
+                Live Site
+              </a>
+            </div>
+            <br />
+            <div class="projectLink">
+              <a href="https://github.com/addisonverger/now-on-view" target="_blank">
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="imageContent">
+            <img src="./now-on-view-site-1.png" alt="Addison Verger">
+          </div>
+        </div>
+      </div>
+      <div id="projectTwoContainer">
+        <div class="flexContainer">
+          <div class="imageContent">
+            <img src="./small-potatoes-site-1.png" alt="Addison Verger">
+          </div>
+          <div class="textContent">
+            <h1 class="title">
+              Small Potatoes
+            </h1>
+            <p>
+              Trivia game application where users can select a category
+              and level of difficulty and play a 10 question round of trivia.
+              "My Stats" page keeps track of your best score & time, as well
+              as your average score and total time played. "Pick Your Toppings"
+              to change the site background.
+            </p>
+            <div class="content">
+              <ul>
+                <li>Created using HTML, CSS, Javascript, React, Redux, and Axios.
+                </li>
+                <li>Used the Open Trivia Database API for question data and the
+                  GIPHY API for randomized background styling. </li>
+              </ul>
+            </div>
+            <br />
+            <div class="projectLink">
+              <a href="https://small-potatoes.firebaseapp.com/" target="_blank">
+                Live Site
+              </a>
+            </div>
+            <br />
+            <div class="projectLink">
+              <a href="https://github.com/addisonverger/small-potatoes" target="_blank">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projectThreeContainer">
+        <div class="flexContainer">
+          <div class="textContent">
+            <h1 class="title">
+              Ace Adoption
+            </h1>
+            <p>
+              E-commerce site where users can adopt a new best friend. Create an
+              account to get started and login to your profile. Search through
+              different breeds, genders, price ranges, locations and ages to find
+              the dog that best fits you. Add dogs to your cart to finalize the
+              adoption.
+            </p>
+            <div class="content">
+              <ul>
+                <li>Group project created using HTML, CSS, Javascript, Express,
+                  Node.js, Passport.js, PostgresQL, and Sequelize.
+                </li>
+              </ul>
+            </div>
+            <br />
+            <div class="projectLink">
+              <a href="https://ace-adoption.herokuapp.com/" target="_blank">
+                Live Site
+              </a>
+            </div>
+            <br />
+            <div class="projectLink">
+              <a href="https://github.com/ace-adoption/ace" target="_blank">
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="imageContent">
+            <img src="./ace-adoption-site.png" alt="Addison Verger">
           </div>
         </div>
       </div>
     </div>
     <div id="contact">
-      <div class="hero is-success is-fullheight is-bold">
+      <div class="hero is-fullheight">
         <div class="hero-body">
           <div class="container" style="text-align:center">
             <div class="contactLink">
@@ -120,6 +226,5 @@
       </div>
     </div>
   </div>
-  <script src="index.js"></script>
 </body>
 </html>
