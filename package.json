@@ -18,5 +18,6 @@
   "homepage": "https://github.com/addisonverger/my-website#readme",
   "dependencies": {
     "bulma": "^0.7.4"
-  }
+  },
+  "devDependencies": {}
 }
