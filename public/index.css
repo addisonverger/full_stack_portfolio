@@ -11,71 +11,47 @@ h1#siteTitle {
   color: #E3C0D3;
 }
 
-@-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-       transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  } 30% {
+    -webkit-transform: translateX(-5px);
+   transform: translateX(-5px);
+  } 50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  } 65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  } 80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  } 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
-@keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  } 30% {
+    -webkit-transform: translateX(-5px);
+   transform: translateX(-5px);
+  } 50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  } 65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  } 80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  } 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 h1#siteTitle:hover {
@@ -191,4 +167,57 @@ h1#siteTitle:hover {
 .contactLink:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
+}
+
+@media only screen and (max-width: 600px) {
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .siteLink {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  h1#siteTitle {
+    font-size: 3rem;
+  }
+
+  h3.subtitle.is-3 {
+    font-size: 1.50rem;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+  }
+
+  .flexContainer.mobile-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .imageContent {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .textContent {
+    overflow-y: visible;
+    height: auto;
+    width: 100vw;
+    padding: 2rem;
+  }
+
+  .contactLink {
+    padding: 1rem 0;
+  }
+
+  .contactLink a {
+    font-size: 1.25rem;
+  }
 }
