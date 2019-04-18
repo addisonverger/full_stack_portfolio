@@ -206,6 +206,10 @@ h1#siteTitle:hover {
     overflow: hidden;
   }
 
+  .imageContent img {
+    object-position: center -50px;
+  }
+
   .textContent {
     overflow-y: visible;
     height: auto;
