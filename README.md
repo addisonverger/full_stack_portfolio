@@ -1,6 +1,6 @@
-# Portfolio Website
+# Full-Stack Portfolio Website
 
-[My Portfolio](https://addisonverger.firebaseapp.com) is a website showcasing my recent projects.
+My Portfolio is a website showcasing my recent projects.
 
 ## Tech Used
 
